@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F05B5387-B445-49AB-95E2-9ECE65126DCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DataGridViewAutoFilter.1.0.0\lib\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="Equin.ApplicationFramework.BindingListView, Version=1.2.2446.31718, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>A:\MongoDB\Equin.ApplicationFramework.BindingListView.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=1.7.0.4714, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>B:\MongoDB\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.7.0.4714, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>B:\MongoDB\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SBindingList.cs" />
+    <Compile Include="Form_Abonent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Abonent.Designer.cs">
+      <DependentUpon>Form_Abonent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Diagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Diagram.Designer.cs">
+      <DependentUpon>Form_Diagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Disrepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Disrepair.Designer.cs">
+      <DependentUpon>Form_Disrepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditAbonent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditAbonent.Designer.cs">
+      <DependentUpon>Form_EditAbonent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditDisrepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditDisrepair.Designer.cs">
+      <DependentUpon>Form_EditDisrepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditExecutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditExecutor.Designer.cs">
+      <DependentUpon>Form_EditExecutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditNachislSumma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditNachislSumma.Designer.cs">
+      <DependentUpon>Form_EditNachislSumma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditPaySumma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditPaySumma.Designer.cs">
+      <DependentUpon>Form_EditPaySumma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditRequest.Designer.cs">
+      <DependentUpon>Form_EditRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditServices.Designer.cs">
+      <DependentUpon>Form_EditServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditStreet.Designer.cs">
+      <DependentUpon>Form_EditStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Executor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Executor.Designer.cs">
+      <DependentUpon>Form_Executor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NachislSumma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NachislSumma.Designer.cs">
+      <DependentUpon>Form_NachislSumma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PaySumma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PaySumma.Designer.cs">
+      <DependentUpon>Form_PaySumma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Registration.Designer.cs">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Request.Designer.cs">
+      <DependentUpon>Form_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Services.Designer.cs">
+      <DependentUpon>Form_Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MongoDBConnect.cs" />
+    <Compile Include="Form_Street.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Street.Designer.cs">
+      <DependentUpon>Form_Street.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Form_Abonent.resx">
+      <DependentUpon>Form_Abonent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Diagram.resx">
+      <DependentUpon>Form_Diagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Disrepair.resx">
+      <DependentUpon>Form_Disrepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditAbonent.resx">
+      <DependentUpon>Form_EditAbonent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditDisrepair.resx">
+      <DependentUpon>Form_EditDisrepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditExecutor.resx">
+      <DependentUpon>Form_EditExecutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditNachislSumma.resx">
+      <DependentUpon>Form_EditNachislSumma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditPaySumma.resx">
+      <DependentUpon>Form_EditPaySumma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditRequest.resx">
+      <DependentUpon>Form_EditRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditServices.resx">
+      <DependentUpon>Form_EditServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditStreet.resx">
+      <DependentUpon>Form_EditStreet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Executor.resx">
+      <DependentUpon>Form_Executor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NachislSumma.resx">
+      <DependentUpon>Form_NachislSumma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PaySumma.resx">
+      <DependentUpon>Form_PaySumma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Registration.resx">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Request.resx">
+      <DependentUpon>Form_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Services.resx">
+      <DependentUpon>Form_Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Street.resx">
+      <DependentUpon>Form_Street.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Class_Street.datasource" />
+    <None Include="Properties\DataSources\Form_Main.datasource" />
+    <None Include="Properties\DataSources\Form_Street.datasource" />
+    <None Include="Properties\DataSources\MongoDB_Class.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
